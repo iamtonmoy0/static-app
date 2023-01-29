@@ -2,9 +2,9 @@
 
 <%= render @friend %>
 
-<div>
-  <%= link_to "Edit this friend", edit_friend_path(@friend) %> |
-  <%= link_to "Back to friends", friends_path %>
+<div class="row">
+  <%= link_to "Edit this friend", edit_friend_path(@friend),class:"btn btn-primary col-4" %> <br/>
+  <%= link_to "Back to friends", friends_path,class:"btn btn-primary col-4" %><br/>
+  <%= button_to "Destroy this friend", @friend,class:"btn btn-danger col-4", method: :delete %>
 
-  <%= button_to "Destroy this friend", @friend, method: :delete %>
 </div>
