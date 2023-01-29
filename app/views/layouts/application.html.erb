@@ -24,6 +24,9 @@
    <%= render 'home/header' %>
    
   </header>
+  <% if notice %>
+<%= render 'layouts/alert' %>
+  <% end %>
   <main>
   
 <%= yield %>

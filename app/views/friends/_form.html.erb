@@ -11,27 +11,27 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :first_name, style: "display: block" %>
-    <%= form.text_field :first_name %>
+  <div class=" form-control form-control-lg col">
+  
+    <%= form.text_field :first_name, placeholder:"enter your name" %>
   </div>
 
-  <div>
+  <div class=" form-control form-control-lg col">
     <%= form.label :last_name, style: "display: block" %>
     <%= form.text_field :last_name %>
   </div>
 
-  <div>
+  <div class=" form-control form-control-lg col">
     <%= form.label :phone, style: "display: block" %>
     <%= form.text_field :phone %>
   </div>
 
-  <div>
+  <div class=" form-control form-control-lg col">
     <%= form.label :twitter, style: "display: block" %>
     <%= form.text_field :twitter %>
   </div>
 
-  <div>
+  <div >
     <%= form.submit %>
   </div>
 <% end %>
