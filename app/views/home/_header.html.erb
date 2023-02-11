@@ -9,7 +9,7 @@
           <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
           <li> <%= link_to 'Friends',friends_path, class:"nav-link px-2 text-white"%> </li>
           <% if user_signed_in? %>
-               <li><%= link_to 'Sign out', destroy_user_session_path ,method: :delete , class:"nav-link px-2 text-white"%> </li>
+               <li><%= link_to 'Sign out', destroy_user_session_path ,method: :delete , class:"nav-link px-2 text-white" %> </li>
           <li> <%= link_to 'About', home_about_path,class:"nav-link px-2 text-white" %> </li>
           <% else %>
           <li><%= link_to 'Sign Up',  new_user_registration_path, class:"nav-link px-2 text-white"%> </li>
